@@ -1,4 +1,4 @@
-import 'package:chatgptflutter/chatgptpage/chatgpt_flutter.dart';
+import 'package:chatgptflutter/chatgptpage/chatgpt_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Chatgpt With Flutter',
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        useMaterial3: true,
       ),
       home: ChatGptPage(),
     );
