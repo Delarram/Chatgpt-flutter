@@ -13,6 +13,9 @@ class ChatGptBloc extends ChangeNotifier{
   Messages messages = Messages(sender:controller.text, text: "User");
   chatMessage?.insert(0, messages);
   controller.clear();
+
+
+
   notifyListeners();
   }
 }
