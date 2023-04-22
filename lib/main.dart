@@ -1,4 +1,6 @@
 import 'package:chatgptflutter/chatgptpage/chatgpt_page.dart';
+import 'package:chatgptflutter/theme/home_page.dart';
+import 'package:chatgptflutter/theme/my_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Chatgpt With Flutter',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: ChatGptPage(),
+      theme: MyTheme.lightTheme,
+      themeMode: ThemeMode.system,
+      darkTheme: MyTheme.darkTheme,
+      home: HomePage(),
     );
   }
 }
