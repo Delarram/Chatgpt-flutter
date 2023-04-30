@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
    final  text = MediaQuery.of(context).platformBrightness == Brightness.dark?"DarkTheme":"LightTheme";
     return Scaffold(
       appBar: AppBar(
+        iconTheme: Theme.of(context).iconTheme,
         title: const Text("Themes"),
         actions: const [
           ThemeButtonWidget()
