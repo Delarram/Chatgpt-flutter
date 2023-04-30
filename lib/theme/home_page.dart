@@ -7,12 +7,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   final  text = MediaQuery.of(context).platformBrightness == Brightness.dark?"DarkTheme":"LightTheme";
 
+   final  text = MediaQuery.of(context).platformBrightness == Brightness.dark?"DarkTheme":"LightTheme";
     return Scaffold(
       appBar: AppBar(
-        title: Text("Themes"),
-        actions: [
+        iconTheme: Theme.of(context).iconTheme,
+        title: const Text("Themes"),
+        actions: const [
           ThemeButtonWidget()
         ],
       ),
